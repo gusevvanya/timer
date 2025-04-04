@@ -17,8 +17,8 @@ export default function WorkoutTimer() {
   const [isRunning, setIsRunning] = useState(false);
   const [isWarning, setIsWarning] = useState(false);
   const timerRef = useRef(null);
-  const startSoundRef = useRef(new Audio('./assets/start-sound.mp3'));
-  const warningSoundRef = useRef(new Audio('./assets/warning-sound.mp3'));
+  const startSoundRef = useRef(new Audio('/start-sound.mp3'));
+  const warningSoundRef = useRef(new Audio('/warning-sound.mp3'));
 
   useEffect(() => {
     if (isRunning) {
